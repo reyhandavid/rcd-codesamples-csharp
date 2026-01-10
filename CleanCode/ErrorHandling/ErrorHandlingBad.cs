@@ -12,7 +12,9 @@ namespace CleanCode.ErrorHandling.Bad
                 return -1; // Error code - what does -1 mean?
             
             // More logic...
-            if (/* some error */)
+            // Simulated error condition
+            bool hasError = orderId.Length < 5;
+            if (hasError)
                 return -2; // Different error code
             
             return 0; // Success - forces caller to check return value
